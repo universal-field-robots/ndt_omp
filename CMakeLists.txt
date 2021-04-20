@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(ndt_omp)
 
-add_definitions(-std=c++11)
-set(CMAKE_CXX_FLAGS "-std=c++11")
+add_definitions(-std=c++14)
+set(CMAKE_CXX_FLAGS "-std=c++14")
 EXECUTE_PROCESS(COMMAND uname -m COMMAND tr -d '\n' OUTPUT_VARIABLE ARCHITECTURE)
 
 # -mavx causes a lot of errors!!
